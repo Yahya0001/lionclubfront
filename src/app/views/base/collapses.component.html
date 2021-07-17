@@ -1,0 +1,58 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          Projects
+        </div>
+        <div class="card-body">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+            <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">  
+              <button type="button" class="btn btn-block btn-outline-primary" style="width: 180px;margin-right: 670px;" (click)="openDialog()">Create a new project</button>
+            </div>            
+            <button aria-controls="navbarSupportedContent" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" class="navbar-toggler" type="button" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" [collapse]="isCollapsed" [isAnimated]="true" style="float: right;">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search a project" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="animated fadeIn" style="min-height: 500px;">
+  <div class="card">
+    <div class="card-header">
+      Test 1
+      <span class="badge badge-success">Active</span>
+      <div class="card-header-actions">
+        <a href="https://valor-software.com/ngx-bootstrap/#/collapse" target="_blank">
+          <p className="text-muted" style="border: green;">delete</p>
+        </a>
+      </div>
+    </div>
+    <div class="card-body"
+         (collapsed)="collapsed($event)"
+         (expanded)="expanded($event)"
+         [collapse]="isCollapsed">
+      <p>
+        This is a test
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-primary"
+              (click)="isCollapsed = !isCollapsed">Modify
+      </button>
+    </div>
+  </div>
+</div>
+

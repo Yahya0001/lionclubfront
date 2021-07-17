@@ -1,0 +1,87 @@
+
+<div class="card">
+
+    <div class="card-header" style="height: 50px;">
+      <i><strong>My projects</strong></i>
+    </div>
+    <div class="card-body">
+      <div style="display: flex;">
+        <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">           
+          <button type="button" class="btn btn-block btn-outline-primary"  (click)="openDialog()" style="width: 140px;transform: translateX(-13px);"><i class="fa fa-plus" style="transform: translateX(-5px);"></i> Add a project</button>
+        </div> 
+        <mat-form-field class="form-inline my-2 my-lg-0">
+          <mat-label style="margin-right: 10px;">Filter</mat-label>
+          <input matInput (keyup)="applyFilter($event)"  placeholder="Search for title">
+        </mat-form-field>
+      </div>
+      <br>
+      <table mat-table [dataSource]="this.dbdd"  class="table table-responsive-sm table-hover table-outline mb-0">
+        <thead class="thead-light">
+        <!-- ID Column -->
+        <ng-container matColumnDef="position"  style="width: 10%;">
+          <th mat-header-cell *matHeaderCellDef> ID. </th>
+          <td mat-cell *matCellDef="let element; let index= index"> {{index+1}} </td>
+        </ng-container>
+      
+        <!-- Title Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef  style="width: 15%;"> Title </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+  
+        <!-- Pole Column -->
+        <ng-container matColumnDef="pole">
+          <th mat-header-cell *matHeaderCellDef  style="width: 15%;"> Pole </th>
+          <td mat-cell *matCellDef="let element"> {{getPoleTitle(element.pole)}} </td>
+        </ng-container>      
+  
+        <!-- Leader Column -->
+        <ng-container matColumnDef="Leader">
+          <th mat-header-cell *matHeaderCellDef  style="width: 15%;"> Leader </th>
+          <td mat-cell *matCellDef="let element"> by {{element.leader.username}} </td>
+        </ng-container>
+   
+        <!-- Statut Column -->
+        <ng-container matColumnDef="statut">
+          <th mat-header-cell *matHeaderCellDef  style="width: 20%;">Deadline / Statut </th>
+          <td mat-cell *matCellDef="let element; ">{{element.dead_line}}
+            <i class="badge badge-{{gett(element.dead_line)}}"> {{expired(element.dead_line)}}</i>
+          </td>
+        </ng-container>
+  
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef style="width: 25%;"> Actions</th>
+          <td mat-cell *matCellDef="let element">
+              <button class="btn btn-primary " (click)="seeMore()" ><i class="fa fa-eye" style="margin-right: 3px;"></i>See More</button>
+              <button class="btn btn-warning" routerLink="{{element.name}}"><i class="fa fa-edit" style="margin-right: 3px;" ></i>Edit</button>
+              <button class="btn btn-danger" (click)="deleteEvent(element)"><i class="fa fa-trash" style="margin-right: 3px;"></i>Delete</button>
+              
+          </td>
+        </ng-container>
+  
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </thead>
+      </table>
+      
+    </div>
+  </div>
+  
+  <style>
+    table {
+      width: 100%;
+    }
+    table *{
+      margin-top: 5px;
+    }
+    td{
+      margin-top: 5px;
+    }
+  
+    #id5:hover{
+      text-decoration: none;
+    }
+    </style>
+  

@@ -1,0 +1,1248 @@
+{
+  "Tasks": [
+    {
+      "id": 1,
+      "title": "Finir le cahier de charge",
+      "description": "Réaliser le cahier de charge concerenant le projet: Platforme RH, avec tous les fonctionnalités discutés dans la réunion précédante",
+      "users": [
+        {
+          "id": 1,
+          "username": "user1",
+          "first_name": "first_name1",
+          "last_name": "last_name1",
+          "email": "email1@gmail.com",
+          "password": "password1",
+          "groups": [
+            {
+              "id": 1,
+              "name": "bureau",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": true,
+          "is_active": true,
+          "is_superuser": false,
+          "last_login": "2021-04-23T14:03:15.000Z",
+          "date_joined": "2021-04-22T23:00:00.000Z",
+          "image": {
+            "id": 1,
+            "name": "profile_pic1",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "40325698",
+          "birthdate": "1998-06-20T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 1,
+              "name": "Relations humaines",
+              "codename": "RH"
+            },
+            {
+              "id": 4,
+              "name": "Projet",
+              "codename": "Projet"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "username": "user2",
+          "first_name": "first_name2",
+          "last_name": "last_name2",
+          "email": "email2@gmail.com",
+          "password": "password2",
+          "groups": [
+            {
+              "id": 1,
+              "name": "bureau",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "RH",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": true,
+          "is_active": false,
+          "is_superuser": true,
+          "last_login": "2021-04-22T11:03:15.000Z",
+          "date_joined": "2021-04-20T23:00:00.000Z",
+          "image": {
+            "id": 2,
+            "name": "profile_pic2",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "42325698",
+          "birthdate": "1997-08-20T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 3,
+              "name": "Marketing et communication",
+              "codename": "Com"
+            }
+          ]
+        }
+      ],
+      "project": 1,
+      "status": "In progress",
+      "deadline": "2021-04-30T23:00:00.000Z",
+      "user": {
+        "id": 1,
+        "username": "user1",
+        "first_name": "first_name1",
+        "last_name": "last_name1",
+        "email": "email1@gmail.com",
+        "password": "password1",
+        "groups": [
+          {
+            "id": 1,
+            "name": "bureau",
+            "permissions": [
+              {
+                "id": 1,
+                "name": "view",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "view"
+              },
+              {
+                "id": 2,
+                "name": "add",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "add"
+              },
+              {
+                "id": 3,
+                "name": "change",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "change"
+              },
+              {
+                "id": 4,
+                "name": "delete",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "delete"
+              }
+            ]
+          }
+        ],
+        "user_permissions": [
+          {
+            "id": 1,
+            "name": "view",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "view"
+          },
+          {
+            "id": 2,
+            "name": "add",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "add"
+          },
+          {
+            "id": 3,
+            "name": "change",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "change"
+          },
+          {
+            "id": 4,
+            "name": "delete",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "delete"
+          }
+        ],
+        "is_staff": true,
+        "is_active": true,
+        "is_superuser": false,
+        "last_login": "2021-04-23T14:03:15.000Z",
+        "date_joined": "2021-04-22T23:00:00.000Z",
+        "image": {
+          "id": 1,
+          "name": "profile_pic1",
+          "created_at": "2021-04-22T23:00:00.000Z"
+        },
+        "telephone": "40325698",
+        "birthdate": "1998-06-20T23:00:00.000Z",
+        "poles": [
+          {
+            "id": 1,
+            "name": "Relations humaines",
+            "codename": "RH"
+          },
+          {
+            "id": 4,
+            "name": "Projet",
+            "codename": "Projet"
+          }
+        ]
+      },
+      "files": [
+        {
+          "id": 10,
+          "name": "Project1",
+          "created_at": "2021-04-27T23:00:00.000Z"
+        }
+      ],
+      "created_at": "2021-04-01T23:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Finir la conception",
+      "description": "Réaliser la conception concerenant le projet: Platforme RH, avec respectant les fonctionnalités spécifiés dans le cahier de charge",
+      "users": [
+        {
+          "id": 1,
+          "username": "user1",
+          "first_name": "first_name1",
+          "last_name": "last_name1",
+          "email": "email1@gmail.com",
+          "password": "password1",
+          "groups": [
+            {
+              "id": 1,
+              "name": "bureau",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": true,
+          "is_active": true,
+          "is_superuser": false,
+          "last_login": "2021-04-23T14:03:15.000Z",
+          "date_joined": "2021-04-22T23:00:00.000Z",
+          "image": {
+            "id": 1,
+            "name": "profile_pic1",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "40325698",
+          "birthdate": "1998-06-20T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 1,
+              "name": "Relations humaines",
+              "codename": "RH"
+            },
+            {
+              "id": 4,
+              "name": "Projet",
+              "codename": "Projet"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "username": "user2",
+          "first_name": "first_name2",
+          "last_name": "last_name2",
+          "email": "email2@gmail.com",
+          "password": "password2",
+          "groups": [
+            {
+              "id": 1,
+              "name": "bureau",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "RH",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": true,
+          "is_active": false,
+          "is_superuser": true,
+          "last_login": "2021-04-22T11:03:15.000Z",
+          "date_joined": "2021-04-20T23:00:00.000Z",
+          "image": {
+            "id": 2,
+            "name": "profile_pic2",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "42325698",
+          "birthdate": "1997-08-20T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 3,
+              "name": "Marketing et communication",
+              "codename": "Com"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "username": "user3",
+          "first_name": "first_name3",
+          "last_name": "last_name3",
+          "email": "email3@gmail.com",
+          "password": "password3",
+          "groups": [
+            {
+              "id": 5,
+              "name": "membre",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": false,
+          "is_active": true,
+          "is_superuser": false,
+          "last_login": "2021-04-24T14:15:35.000Z",
+          "date_joined": "2021-04-22T23:00:00.000Z",
+          "image": {
+            "id": 3,
+            "name": "profile_pic3",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "41325698",
+          "birthdate": "1999-10-02T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 2,
+              "name": "Developement commercial",
+              "codename": "Devcom"
+            }
+          ]
+        }
+      ],
+      "project": 2,
+      "status": "Pending",
+      "deadline": "2021-05-09T23:00:00.000Z",
+      "user": {
+        "id": 2,
+        "username": "user2",
+        "first_name": "first_name2",
+        "last_name": "last_name2",
+        "email": "email2@gmail.com",
+        "password": "password2",
+        "groups": [
+          {
+            "id": 1,
+            "name": "bureau",
+            "permissions": [
+              {
+                "id": 1,
+                "name": "view",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "view"
+              },
+              {
+                "id": 2,
+                "name": "add",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "add"
+              },
+              {
+                "id": 3,
+                "name": "change",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "change"
+              },
+              {
+                "id": 4,
+                "name": "delete",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "delete"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "RH",
+            "permissions": [
+              {
+                "id": 1,
+                "name": "view",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "view"
+              },
+              {
+                "id": 2,
+                "name": "add",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "add"
+              },
+              {
+                "id": 3,
+                "name": "change",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "change"
+              },
+              {
+                "id": 4,
+                "name": "delete",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "delete"
+              }
+            ]
+          }
+        ],
+        "user_permissions": [
+          {
+            "id": 1,
+            "name": "view",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "view"
+          },
+          {
+            "id": 2,
+            "name": "add",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "add"
+          },
+          {
+            "id": 3,
+            "name": "change",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "change"
+          },
+          {
+            "id": 4,
+            "name": "delete",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "delete"
+          }
+        ],
+        "is_staff": true,
+        "is_active": false,
+        "is_superuser": true,
+        "last_login": "2021-04-22T11:03:15.000Z",
+        "date_joined": "2021-04-20T23:00:00.000Z",
+        "image": {
+          "id": 2,
+          "name": "profile_pic2",
+          "created_at": "2021-04-22T23:00:00.000Z"
+        },
+        "telephone": "42325698",
+        "birthdate": "1997-08-20T23:00:00.000Z",
+        "poles": [
+          {
+            "id": 3,
+            "name": "Marketing et communication",
+            "codename": "Com"
+          }
+        ]
+      },
+      "files": [
+        {
+          "id": 11,
+          "name": "Project2",
+          "created_at": "2021-04-27T23:00:00.000Z"
+        }
+      ],
+      "created_at": "2021-04-04T23:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Finir le desing du site",
+      "description": "Réaliser le design du site en prenant en compte les fontionnalités spécifiés dans le cahier de charge et la conception",
+      "users": [
+        {
+          "id": 1,
+          "username": "user1",
+          "first_name": "first_name1",
+          "last_name": "last_name1",
+          "email": "email1@gmail.com",
+          "password": "password1",
+          "groups": [
+            {
+              "id": 1,
+              "name": "bureau",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": true,
+          "is_active": true,
+          "is_superuser": false,
+          "last_login": "2021-04-23T14:03:15.000Z",
+          "date_joined": "2021-04-22T23:00:00.000Z",
+          "image": {
+            "id": 1,
+            "name": "profile_pic1",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "40325698",
+          "birthdate": "1998-06-20T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 1,
+              "name": "Relations humaines",
+              "codename": "RH"
+            },
+            {
+              "id": 4,
+              "name": "Projet",
+              "codename": "Projet"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "username": "user3",
+          "first_name": "first_name3",
+          "last_name": "last_name3",
+          "email": "email3@gmail.com",
+          "password": "password3",
+          "groups": [
+            {
+              "id": 5,
+              "name": "membre",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": false,
+          "is_active": true,
+          "is_superuser": false,
+          "last_login": "2021-04-24T14:15:35.000Z",
+          "date_joined": "2021-04-22T23:00:00.000Z",
+          "image": {
+            "id": 3,
+            "name": "profile_pic3",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "41325698",
+          "birthdate": "1999-10-02T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 2,
+              "name": "Developement commercial",
+              "codename": "Devcom"
+            }
+          ]
+        }
+      ],
+      "project": 3,
+      "status": "In progress",
+      "deadline": "2021-05-14T23:00:00.000Z",
+      "user": {
+        "id": 3,
+        "username": "user3",
+        "first_name": "first_name3",
+        "last_name": "last_name3",
+        "email": "email3@gmail.com",
+        "password": "password3",
+        "groups": [
+          {
+            "id": 5,
+            "name": "membre",
+            "permissions": [
+              {
+                "id": 1,
+                "name": "view",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "view"
+              }
+            ]
+          }
+        ],
+        "user_permissions": [
+          {
+            "id": 1,
+            "name": "view",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "view"
+          },
+          {
+            "id": 2,
+            "name": "add",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "add"
+          },
+          {
+            "id": 3,
+            "name": "change",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "change"
+          },
+          {
+            "id": 4,
+            "name": "delete",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "delete"
+          }
+        ],
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "last_login": "2021-04-24T14:15:35.000Z",
+        "date_joined": "2021-04-22T23:00:00.000Z",
+        "image": {
+          "id": 3,
+          "name": "profile_pic3",
+          "created_at": "2021-04-22T23:00:00.000Z"
+        },
+        "telephone": "41325698",
+        "birthdate": "1999-10-02T23:00:00.000Z",
+        "poles": [
+          {
+            "id": 2,
+            "name": "Developement commercial",
+            "codename": "Devcom"
+          }
+        ]
+      },
+      "files": [
+        {
+          "id": 12,
+          "name": "Project3",
+          "created_at": "2021-04-27T23:00:00.000Z"
+        }
+      ],
+      "created_at": "2021-03-31T23:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "New task",
+      "description": "New task description",
+      "deadline": "2021-04-30T23:00:00.000Z",
+      "users": [
+        {
+          "id": 2,
+          "username": "user2",
+          "first_name": "first_name2",
+          "last_name": "last_name2",
+          "email": "email2@gmail.com",
+          "password": "password2",
+          "groups": [
+            {
+              "id": 1,
+              "name": "bureau",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "RH",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                },
+                {
+                  "id": 2,
+                  "name": "add",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "add"
+                },
+                {
+                  "id": 3,
+                  "name": "change",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "change"
+                },
+                {
+                  "id": 4,
+                  "name": "delete",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "delete"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": true,
+          "is_active": false,
+          "is_superuser": true,
+          "last_login": "2021-04-22T11:03:15.000Z",
+          "date_joined": "2021-04-20T23:00:00.000Z",
+          "image": {
+            "id": 2,
+            "name": "profile_pic2",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "42325698",
+          "birthdate": "1997-08-20T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 3,
+              "name": "Marketing et communication",
+              "codename": "Com"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "username": "user3",
+          "first_name": "first_name3",
+          "last_name": "last_name3",
+          "email": "email3@gmail.com",
+          "password": "password3",
+          "groups": [
+            {
+              "id": 5,
+              "name": "membre",
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view",
+                  "content_type": "XXXXXXXXXXX",
+                  "codename": "view"
+                }
+              ]
+            }
+          ],
+          "user_permissions": [
+            {
+              "id": 1,
+              "name": "view",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "view"
+            },
+            {
+              "id": 2,
+              "name": "add",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "add"
+            },
+            {
+              "id": 3,
+              "name": "change",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "change"
+            },
+            {
+              "id": 4,
+              "name": "delete",
+              "content_type": "XXXXXXXXXXX",
+              "codename": "delete"
+            }
+          ],
+          "is_staff": false,
+          "is_active": true,
+          "is_superuser": false,
+          "last_login": "2021-04-24T14:15:35.000Z",
+          "date_joined": "2021-04-22T23:00:00.000Z",
+          "image": {
+            "id": 3,
+            "name": "profile_pic3",
+            "created_at": "2021-04-22T23:00:00.000Z"
+          },
+          "telephone": "41325698",
+          "birthdate": "1999-10-02T23:00:00.000Z",
+          "poles": [
+            {
+              "id": 2,
+              "name": "Developement commercial",
+              "codename": "Devcom"
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "project": 1,
+      "user": {
+        "id": 1,
+        "username": "user1",
+        "first_name": "first_name1",
+        "last_name": "last_name1",
+        "email": "email1@gmail.com",
+        "password": "password1",
+        "groups": [
+          {
+            "id": 1,
+            "name": "bureau",
+            "permissions": [
+              {
+                "id": 1,
+                "name": "view",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "view"
+              },
+              {
+                "id": 2,
+                "name": "add",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "add"
+              },
+              {
+                "id": 3,
+                "name": "change",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "change"
+              },
+              {
+                "id": 4,
+                "name": "delete",
+                "content_type": "XXXXXXXXXXX",
+                "codename": "delete"
+              }
+            ]
+          }
+        ],
+        "user_permissions": [
+          {
+            "id": 1,
+            "name": "view",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "view"
+          },
+          {
+            "id": 2,
+            "name": "add",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "add"
+          },
+          {
+            "id": 3,
+            "name": "change",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "change"
+          },
+          {
+            "id": 4,
+            "name": "delete",
+            "content_type": "XXXXXXXXXXX",
+            "codename": "delete"
+          }
+        ],
+        "is_staff": true,
+        "is_active": true,
+        "is_superuser": false,
+        "last_login": "2021-04-23T14:03:15.000Z",
+        "date_joined": "2021-04-22T23:00:00.000Z",
+        "image": {
+          "id": 1,
+          "name": "profile_pic1",
+          "created_at": "2021-04-22T23:00:00.000Z"
+        },
+        "telephone": "40325698",
+        "birthdate": "1998-06-20T23:00:00.000Z",
+        "poles": [
+          {
+            "id": 1,
+            "name": "Relations humaines",
+            "codename": "RH"
+          },
+          {
+            "id": 4,
+            "name": "Projet",
+            "codename": "Projet"
+          }
+        ]
+      },
+      "files": [],
+      "created_at": "2021-04-30T16:45:07.553Z"
+    }
+  ]
+}

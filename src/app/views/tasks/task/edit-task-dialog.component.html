@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>Edit task</h1>
+<div mat-dialog-content>
+    
+        <mat-form-field appearance="fill">
+            <mat-label>Task title</mat-label>
+            <input matInput placeholder="Finir le ..." name="task_title" ngDefaultControl [(ngModel)]="currTask.title">
+            <mat-hint>Qq chose bref et clair</mat-hint>
+        </mat-form-field>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Description de la tâche</mat-label>
+            <textarea matInput rows="5" [(ngModel)]="currTask.description" name="task_description" ngDefaultControl></textarea>
+        </mat-form-field>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Choose a new date</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="deadline">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker [(ngModel)]="deadline" name="task_deadline" ngDefaultControl (selectedChanged)="onChange($event)"></mat-datepicker>
+        </mat-form-field>
+    </p>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Select users</mat-label>
+        <mat-select [(value)]="profs" multiple>
+            <mat-option *ngFor="let user of users" [value]="user">
+            {{user.first_name + ' ' + user.last_name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Select Status</mat-label>
+        <mat-select [(value)]="status">
+            <mat-option value="Pending">Pending</mat-option>
+            <mat-option value="In Progress">In Progress</mat-option>
+            <mat-option value="Completed">Completed</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="btn btn-seconday">Cancel</button>
+  <button mat-button mat-dialog-close class="btn btn-warning" (click)="proceedWithEditing()">Edit</button>
+</div>

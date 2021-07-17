@@ -1,0 +1,28 @@
+{
+  "Permissions": [
+    {
+      "id": 1,
+      "name": "view",
+      "content_type": "XXXXXXXXXXX",
+      "codename": "view"
+    },
+    {
+      "id": 2,
+      "name": "add",
+      "content_type": "XXXXXXXXXXX",
+      "codename": "add"
+    },
+    {
+      "id": 3,
+      "name": "change",
+      "content_type": "XXXXXXXXXXX",
+      "codename": "change"
+    },
+    {
+      "id": 4,
+      "name": "delete",
+      "content_type": "XXXXXXXXXXX",
+      "codename": "delete"
+    }
+  ]
+}

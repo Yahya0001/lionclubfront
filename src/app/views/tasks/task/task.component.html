@@ -1,0 +1,29 @@
+<div class ="container" *ngIf = "currTask">
+    <h1>{{currTask.title}}</h1>
+    <mat-divider></mat-divider>
+    <div class="row">
+        <div class="col-sm-7 col-xs-12">
+            <h2> Project: {{projectTitle}}</h2>
+        </div>
+        <div class="col-sm-5 col-xs-12" >
+            <img src="/assets/img/{{user.image.name}}.png" alt="Avatar" class="avatar" *ngFor="let user of currTask.users">
+        </div>
+    </div>
+    <h3> Status: {{currTask.status}} </h3>
+    <div class="col-sm-12">
+        <h4>Deadline: {{currTask.deadline |  date:'dd/MM/yyyy'}}</h4>
+        <p>{{currTask.description}}</p>
+    </div>
+    <button mat-button class="btn btn-success" (click)="markAsCompleted()">MARK AS DONE</button>
+    <button mat-button class="btn btn-primary" (click)="editTask()">EDIT</button>
+    <button mat-button class="btn btn-danger" (click)="deleteTask()">DELETE</button>
+</div>
+
+<div *ngIf = "taskDeleted">
+    <p>We can't find this task, it probably was removed</p>
+    <button mat-button class="btn btn-primary" routerLink="/tasks">GO BACK</button>
+</div>
+
+<div *ngIf="!currTask">
+  <mat-spinner></mat-spinner>
+</div>

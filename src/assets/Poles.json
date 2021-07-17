@@ -1,0 +1,24 @@
+{
+  "Poles": [
+    {
+      "id": 1,
+      "name": "Relations humaines",
+      "codename": "RH"
+    },
+    {
+      "id": 2,
+      "name": "Developement commercial",
+      "codename": "Devcom"
+    },
+    {
+      "id": 3,
+      "name": "Marketing et communication",
+      "codename": "Com"
+    },
+    {
+      "id": 4,
+      "name": "Projet",
+      "codename": "Projet"
+    }
+  ]
+}

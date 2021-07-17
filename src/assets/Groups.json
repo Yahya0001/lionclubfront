@@ -1,0 +1,136 @@
+{
+  "Groups": [
+    {
+      "id": 1,
+      "name": "bureau",
+      "permissions": [
+        {
+          "id": 1,
+          "name": "view",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "view"
+        },
+        {
+          "id": 2,
+          "name": "add",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "add"
+        },
+        {
+          "id": 3,
+          "name": "change",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "change"
+        },
+        {
+          "id": 4,
+          "name": "delete",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "delete"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "RH",
+      "permissions": [
+        {
+          "id": 1,
+          "name": "view",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "view"
+        },
+        {
+          "id": 2,
+          "name": "add",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "add"
+        },
+        {
+          "id": 3,
+          "name": "change",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "change"
+        },
+        {
+          "id": 4,
+          "name": "delete",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "delete"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "adjoint",
+      "permissions": [
+        {
+          "id": 1,
+          "name": "view",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "view"
+        },
+        {
+          "id": 2,
+          "name": "add",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "add"
+        },
+        {
+          "id": 3,
+          "name": "change",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "change"
+        },
+        {
+          "id": 4,
+          "name": "delete",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "delete"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "chef_projet",
+      "permissions": [
+        {
+          "id": 1,
+          "name": "view",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "view"
+        },
+        {
+          "id": 2,
+          "name": "add",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "add"
+        },
+        {
+          "id": 3,
+          "name": "change",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "change"
+        },
+        {
+          "id": 4,
+          "name": "delete",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "delete"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "membre",
+      "permissions": [
+        {
+          "id": 1,
+          "name": "view",
+          "content_type": "XXXXXXXXXXX",
+          "codename": "view"
+        }
+      ]
+    }
+  ]
+}

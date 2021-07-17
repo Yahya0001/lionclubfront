@@ -1,0 +1,33 @@
+
+#id1, #id2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#id11{
+    width: 49%;
+}
+
+#id12, #id22, #id21{
+    width: 49%;
+}
+
+@media screen and (max-width:500px) {
+    #id1,#id2{
+        display: block;
+    }
+    #id11{
+        width: 100%;
+    } 
+    #id22{
+        width: 100%;
+    } 
+    
+    #id21{
+        width: 100%;
+    }
+    
+    #id12{
+        width: 100%;
+    }
+}
