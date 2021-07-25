@@ -3,44 +3,53 @@
     <div class="row">
         <div class="col-md-4">
             <mat-card class="example-card">
-                <mat-card-header>
-                    <mat-card-title>FirstName LastName</mat-card-title>
-                    <mat-card-subtitle>Membre</mat-card-subtitle>
+                
+                <mat-card-header style="margin: 5% 10%;" >
+                    <div style="font-size: 2em;color: #f9c910;">
+                        Member Profile
+                    </div>
                 </mat-card-header>
-                <img mat-card-image src="/assets/img/profile_pic1.png" alt="Profile picture">
-                <label for="singleFile">Update profile picture</label>
+            
+                <br>
+                <div style="text-align: center;">
+                    <img  style="border-radius: 50%;width: 90%;border-style: dotted;border-color: #f9c910;" mat-card-image src="/assets/img/profile_pic1.png" alt="Profile picture">
+                </div>
+                    
+                <mat-card-content >
                 <input id="singleFile" [disabled]="!editMode" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
                 <br>
 
-                <mat-file-upload-queue #fileUploadQueue
+                <mat-file-upload-queue #fileUploadQueue 
                     [fileAlias]="'file'"
                     [httpUrl]="'http://localhost:8180/jax-rs-jersey-application-sample'">
 
                     <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload>
                 </mat-file-upload-queue>
+            </mat-card-content>
             </mat-card>
 
         </div>
         <div class="col-md-8">
+            <div class="card" >
         <form class="example-form">
-  <mat-form-field class="example-full-width">
+  <mat-form-field class="example-full-width" >
     <mat-label>Email Address</mat-label>
-    <input matInput hint="example@mail.com" type="email" [disabled]="!editMode" value="email@gmail.com">
+    <input class="inputclass" matInput hint="example@mail.com" type="email" [disabled]="!editMode" value="email@gmail.com">
   </mat-form-field>
 
     <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
         <mat-label>First name</mat-label>
-        <input matInput [disabled]="!editMode" value="FirstName">
+        <input class="inputclass" matInput [disabled]="!editMode" value="FirstName">
         </mat-form-field></td>
         <td><mat-form-field class="example-full-width">
         <mat-label>Last Name</mat-label>
-        <input matInput [disabled]="!editMode" value="LastName">
+        <input class="inputclass"  matInput [disabled]="!editMode" value="LastName">
         </mat-form-field></td>
     </tr></table>
-    <mat-form-field appearance="fill">
+    <mat-form-field  >
         <mat-label>Birthdate</mat-label>
-        <input matInput [matDatepicker]="picker" [disabled]="!editMode" [value]="defaultBirthdate">
+        <input class="inputclass"  matInput [matDatepicker]="picker" [disabled]="!editMode" [value]="defaultBirthdate">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
@@ -48,11 +57,11 @@
     <mat-form-field class="example-full-width">
         <mat-label>Telephone</mat-label>
         <span matPrefix>+216 &nbsp;</span>
-        <input type="tel" matInput value="55-555-555" [disabled]="!editMode">
+        <input class="inputclass"  type="tel" matInput value="55-555-555" [disabled]="!editMode">
         <mat-icon matSuffix>mode_edit</mat-icon>
     </mat-form-field>
 
-    <mat-form-field appearance="fill">
+    <mat-form-field >
         <mat-label>Enter your current password</mat-label>
         <input matInput [type]="hide ? 'password' : 'text'" [disabled]="!editMode">
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -60,7 +69,7 @@
         </button>
     </mat-form-field>
 
-    <mat-form-field appearance="fill">
+    <mat-form-field >
         <mat-label>Enter your new password</mat-label>
         <input matInput [type]="hideNewPassword ? 'password' : 'text'" [disabled]="!editMode">
         <button mat-icon-button matSuffix (click)="hideNewPassword = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -71,12 +80,21 @@
     
 
 </form>
-    <button class="btn btn-primary" (click)="startEditing()" *ngIf="!editMode">Edit</button>
-    <button class="btn btn-primary" (click)="exitEditing()" *ngIf="editMode">Cancel</button>
-    <button class="btn btn-success" [disabled]="!editMode">Save</button>
+    <div class="row">
+        <div class="col-md-4" style="text-align: center;">
+            <button class="btn btn-primary button1" id="edit" (click)="startEditing()" *ngIf="!editMode" >Edit</button>
+            <button class="btn btn-primary button2" (click)="exitEditing()" *ngIf="editMode" >Cancel</button>
         </div>
-        
+        <div class="col-md-4" style="text-align:left;padding: 0;">
+            <button class="btn btn-success button3" [disabled]="!editMode" >Save</button>
+        </div>
     </div>
 
+    
+    </div>
+    </div>
+        
+    
+</div>
     
 </div>
