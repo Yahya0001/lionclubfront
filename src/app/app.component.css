@@ -11,8 +11,13 @@ h3 {
   margin-top: 15px;
 }
 
+.sidebar .nav{
+  background: brown;
+}
+
 .sidebar-nav h4 {
   margin-bottom: 20px;
+  background-color: rgb(194, 1, 33);
 }
 
 .sidebar-nav ul {
@@ -43,3 +48,6 @@ pre {
   padding: 15px;
 }
 
+.app-header{
+  background-color: brown;
+}

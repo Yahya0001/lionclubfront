@@ -28,24 +28,20 @@ export class pole {
 
 export class profile {
     id : number;
-    username : string;
-    first_name : string;
-    last_name :string;
+    name : string;
     email :string;
-    gender : boolean;
     password : string ;
-    groups : group[] ;
-    user_permissions : permission[] ;
-    is_staff : boolean;
-    is_active : boolean;
-    is_superuser : boolean ;
     last_login : Date;
     date_joined : Date;
-    image : image ;
+    photo : image ;
     telephone : string ;
-    birthdate : Date ;
-    poles : pole [];
+    birthday : Date ;
+    type : String;
+    created_at : String;
+    updated_at : String;
+    email_verified_at: String;
 
+            
 
 }
 export class user {
@@ -60,6 +56,5 @@ export class user {
     image : image ;
     telephone : string ;
     birthdate : Date ;
-    poles : pole [];
 
 }

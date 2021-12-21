@@ -14,7 +14,5 @@ export class users {
   date_joined : string ;
   image : Array<any>;
   telephone : string ;
-  poles : Array<any>;
-
 
 }

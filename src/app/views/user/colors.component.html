@@ -2,38 +2,46 @@
   <div class="container mx-auto">
     <div class="title">Create a Member</div>
     <div class="content">
-      <form action="#">
+      <form  [formGroup]="createUser" (ngSubmit)="create()">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <span class="details">Name</span>
+            <input type="text" placeholder="Enter your name" formControlName="name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Type</span>
+            <mat-form-field appearance="fill">
+              <mat-label>Select user type</mat-label>
+              <mat-select  formControlName="type" [errorStateMatcher]="matcher">
+                <mat-option value="0">member</mat-option>
+                <mat-option value="1">admin</mat-option>
+                <mat-option value="2">board member</mat-option>
+              </mat-select>
+            </mat-form-field>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" formControlName="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" formControlName="phone" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
             <span class="details">Birthdate</span>
-            <input id="date-input" type="date" name="date-input" placeholder="date" required>
-            
+            <input id="date-input" formControlName="birthday" type="date" name="date-input" placeholder="date" required>
           </div>
+
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="text" formControlName="password" placeholder="Enter your password" required>
           </div>
         
         </div>
-        <div clas="gender-details">
+        
+        <div class="gender-details">
           <div class="profile-pic-div" style="position: inherit;" >
-          <img src="assets/img/avatars/1.jpg" id="photo" style=" height: 100px;
+          <img src="{{imgURL}}" id="photo" style=" height: 100px;
           width: 100px;
           top: 50%;
          left: 50%;
@@ -41,7 +49,8 @@
          border-radius: 50%;
          overflow: hidden;
          border: 1px solid grey;">
-          <input type="file" id="file" style="display: none;" >
+         
+          <input type="file" id="file" (change)="imageChange($event)" style="display: none;" >
           <label  for="file" id="uploadBtn" style="height: 40px;
           left: 50%;
           width: 400px;
@@ -62,7 +71,25 @@
 
         </div>
         <div class="button">
-          <input type="submit" value="Register">
+          <button (click)="create()" 
+          [disabled]="loading"
+          style="    height: 100%;
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background: linear-gradient(
+      329deg
+      , #71b7e6 10%,#112e57b8 40%, #112e57 100%);"
+                ><span *ngIf="!loading">Register</span>
+                <span *ngIf="loading">loading</span>
+                  
+                </button>
         </div>
       </form>
     </div>

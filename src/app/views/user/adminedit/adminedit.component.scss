@@ -1,0 +1,16 @@
+.boxcard{
+    border: 1px solid black;
+    padding: 0;
+    .boxcard-header{
+        background: linear-gradient(14deg, #365581 0%,#0b264b 50%) ;
+        padding: 17px 10px 10px;
+        text-align: center;
+    }
+}
+
+.login{
+    background-color: #FFCF01;
+    color: #0b264b;
+    margin: 10px auto;
+    display: flex;
+}

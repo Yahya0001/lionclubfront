@@ -58,7 +58,6 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-import {MyDialogComponent} from './my-dialog/my-dialog.component';
 
 
 
@@ -89,13 +88,30 @@ import { DialComponent } from './dial/dial.component';
 import { ProjetComponent } from './views/projet/projet.component';
 
 import { ProfileComponent } from './views/profile/profile.component';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { CreateComponent } from './event/create/create.component';
+import { CalendrierComponent } from './event/calendrier/calendrier.component';
+import { ArchiveComponent } from './event/archive/archive.component';
+import {MyDialogComponent} from './event/archive/my-dialog/my-dialog.component';
+import { MyDialog2Component } from './event/archive/my-dialog2/my-dialog2.component';
+import { MyDialog3Component } from './event/archive/my-dialog3/my-dialog3.component';
 
-
+import {CdkTableModule} from '@angular/cdk/table';
+import { AddComponent } from './views/articles/add/add.component';
+import { ListComponent } from './views/articles/list/list.component';
+import { ArticleDialogComponent } from './views/articles/list/article-dialog/article-dialog.component';
+import { EditDialogComponent } from './views/articles/list/edit-dialog/edit-dialog.component';
+import { DeleteDialogComponent } from './views/articles/list/delete-dialog/delete-dialog.component';
+import { AddArchiveComponent } from './views/documentsarchive/add/add.component';
+import { ListArchiveComponent } from './views/documentsarchive/list/list.component';
+import { DeleteComponent } from './views/documentsarchive/delete/delete.component';
 
 @NgModule({
   imports: [
     MatDialogModule,
+    CdkTableModule,
     MatFormFieldModule,
+    NgxPaginationModule,
     MatIconModule,
     BrowserModule,
     HttpClientModule,
@@ -159,7 +175,22 @@ import { ProfileComponent } from './views/profile/profile.component';
     DialComponent,
     ProjetComponent,
     MyDialogComponent,
-    ProfileComponent
+    ProfileComponent,
+    CreateComponent,
+    CalendrierComponent,
+    ArchiveComponent,
+    MyDialog2Component,
+    MyDialog3Component,
+    AddComponent,
+    ListComponent,
+    ArticleDialogComponent,
+    EditDialogComponent,
+    DeleteDialogComponent,
+    ListArchiveComponent,
+    AddArchiveComponent,
+    DeleteComponent,
+    
+    
 
     
 

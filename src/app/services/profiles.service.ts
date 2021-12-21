@@ -1,57 +1,46 @@
+import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import {HttpClient,HttpHeaders} from '@angular/common/http' ;
+import { SERVER_API_URL } from '../app.constants';
+import  Membre   from '../shared/membre';
+import { HttpClient, HttpResponse , HttpHeaders} from '@angular/common/http';
+import { User } from '../shared/login'
+import { baseURL } from '../shared/baseURL';
+import { ProcessHTTPMsgService} from './process-httpmsg.service';
+import {catchError} from 'rxjs/operators';
 
-import {Observable} from 'rxjs';
-import {catchError, map} from 'rxjs/operators';
-import {ProcessHTTPMsgService} from './process-httpmsg.service'
-import { profile } from '../shared/profile';
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type':  'application/json'  
-  })
-};
-const baseURL = "http://localhost:3000";
-const ProjectsURL = "http://localhost:4000";
 @Injectable({
 
   providedIn: 'root'
 })
 export class profilesService {
   
-
-  constructor(private http : HttpClient, private ProcessHTTPMsgService:ProcessHTTPMsgService) { }
-getProfiles() :Observable< Array <profile>> {
-  return this.http.get<Array<profile>>(baseURL+'/profiles')
-  .pipe(catchError(this.ProcessHTTPMsgService.handleError));
-}
-getProfile(id : number ) : Observable<profile>{
-  return this.http.get<Array<profile>>(baseURL+'/profiles').pipe(
-    map((profiles : Array <profile>)=> {
-      let profile = profiles.filter((prf : profile)=> prf.id == id);
-      return (profile && profile.length) ? profile[0] : null ;
-    }),
-    catchError(this.ProcessHTTPMsgService.handleError));
+  auth_token = localStorage.getItem('token');
   
-}
-createProfile(profile : profile) :Observable <profile>{
-return this.http.post<profile>(baseURL+'/profiles/',httpOptions)
- .pipe(catchError(this.ProcessHTTPMsgService.handleError));
- }
-deleteProfile(id : number) : Observable <{}> {
-  const url =  baseURL + '/profiles/' + id.toString(); 
-  return this.http.delete(url, httpOptions)
+  headers = new HttpHeaders({
+    'Accept': 'application/json',
+    'Authorization': `Bearer ${this.auth_token}`
+  })
 
-    .pipe(
-      catchError(this.ProcessHTTPMsgService.handleError)
 
-    );
+  constructor(private http : HttpClient, private processHTTPMsgService: ProcessHTTPMsgService) { }
 
-}
-updateProfile(id:number):Observable <profile>{
-  return this.http.put<profile>(baseURL+'/profiles/',id.toString(),httpOptions).pipe(
-    catchError(this.ProcessHTTPMsgService.handleError));
+  addProfile(data:any): Observable<any>{
+    return this.http.post(SERVER_API_URL + '/register', data);
+  }
+
+  getProfiles(): Observable <Array<User>>{
+    return this.http.get<Array<User>>(SERVER_API_URL+ '/members')
+    .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
   
+  updateProfile(data:any): Observable <any>{
+    return this.http.post(SERVER_API_URL+ '/user/update' , data , { headers: this.headers })
+    .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
 
-}
-
+  updateMembre(data:any): Observable <any>{
+    return this.http.post(SERVER_API_URL+ '/user/update' , data , { headers: this.headers })
+    .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
+  
 }

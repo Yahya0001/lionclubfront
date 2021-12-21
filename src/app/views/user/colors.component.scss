@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg,#fdbe33, #112e57);
 }
 .container{
   max-width: 700px;
@@ -30,11 +30,11 @@ body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
+  bottom: -11px;
+  height: 7px;
+  width: 80%;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient( 261deg , #fdbe33, #112e57);
 }
 .content form .user-details{
   display: flex;
@@ -51,8 +51,8 @@ form .input-box span.details{
   font-weight: 500;
   margin-bottom: 5px;
 }
-.user-details .input-box input{
-  height: 45px;
+.user-details .input-box input , mat-form-field{
+  height: 60px;
   width: 100%;
   outline: none;
   font-size: 16px;
@@ -61,10 +61,11 @@ form .input-box span.details{
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+  background-color: rgba(0,0,0,.04);
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #9b59b6;
+  border-color:  #112e57;
 }
  form .gender-details .gender-title{
   font-size: 20px;
@@ -117,7 +118,7 @@ form .pole-details .pole-title{
    height: 45px;
    margin: 35px 0
  }
- form .button input{
+ form .button input {
    height: 100%;
    width: 100%;
    border-radius: 5px;
@@ -158,3 +159,10 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+mat-form-field{
+  padding: 0;
+}
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #f9c910 !important;
+} 

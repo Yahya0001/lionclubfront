@@ -1,0 +1,52 @@
+<div class="animated fadeIn">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+
+          <div class="card-header" style="text-align: center; padding: 5px;">
+             Article
+          </div>
+          <input [(ngModel)]="title" (keyup)="search()" type="text">
+          <div class="card-body">
+            <table class="table table-responsive-sm table-hover table-outline mb-0">
+            <thead class="thead-light">
+              <tr>
+                <th>Document</th>
+                <th>Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let document of Documents | paginate
+              : {
+                  itemsPerPage: listDocument.per_page,
+                  currentPage: listDocument.current_page,
+                  totalItems: listDocument.total
+                }">
+                
+                <td >
+                  <a href="http://localhost:8000{{document.document}}"><i class="fas fa-file-alt"></i>{{document.title}}</a>
+                </td>
+                <td>
+                  <div>{{document.date}}</div>
+                </td>
+                <td>
+                
+                  <button (click)="openDeleteDialog(document.id)" mat-mini-fab color="warn"  aria-label="Example icon button with a delete icon">
+                      <mat-icon>delete</mat-icon>
+                </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <mat-paginator 
+          [pageSizeOptions]="[5, 10, 25, 100]"
+          showFirstLastButtons>
+          </mat-paginator> -->
+           <pagination-controls (pageChange)="getData((page = $event))"></pagination-controls>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>

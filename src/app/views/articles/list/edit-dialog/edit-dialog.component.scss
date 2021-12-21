@@ -1,0 +1,83 @@
+.card {
+    max-width: 500px;
+    text-align: center;
+    max-height: 550px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.8s;
+    padding: 0%;
+  }
+  .card:hover {
+  -webkit-box-shadow: -4px 6px 28px -11px rgba(11,38,75,1);
+  -moz-box-shadow: -4px 6px 28px -11px rgba(11,38,75,1);
+  box-shadow: -4px 6px 28px -11px rgba(11,38,75,1);
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  
+  @keyframes animatezoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .login1 {
+    color: #b84141;
+    font-size: 24px;
+    font: bolder;
+    padding: 20px;
+  }
+  .aLink {
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+    color: #633535;
+  }
+  .login {
+    background-color: #3a0687;
+    color: #eeeeee;
+    font: bold;
+    text-align: center;
+  
+    color: white;
+    padding: 8px 8px;
+    margin: 12px 8px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  .avatar1 {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .input {
+    width: 100%;
+    border-radius: 3%;
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  
+  .btn {
+    display: inline-flex;
+  }
+  label {
+      display: block;
+      font: 1rem 'Fira Sans', sans-serif;
+  }
+  
+  input,
+  label {
+      margin: .4rem 0;
+  }

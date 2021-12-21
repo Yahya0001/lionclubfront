@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Import Containers
 import { DefaultLayoutComponent } from './containers';
-import{ EventComponent} from './event/event.component'; 
+import{ EventComponent} from './event/event.component';
+import{ CreateComponent} from './event/create/create.component'; 
 
 import { P404Component } from './views/error/404.component';
 import { P500Component } from './views/error/500.component';
@@ -15,12 +16,19 @@ import { DialComponent } from './dial/dial.component';
 import { ProjetComponent } from './views/projet/projet.component';
 import { ProqComponent } from './views/projet/proq/proq.component';
 import { ProfileComponent } from './views/profile/profile.component';
+import { CalendrierComponent } from './event/calendrier/calendrier.component';
+import { ArchiveComponent } from './event/archive/archive.component';
+import { AddComponent } from './views/articles/add/add.component';
+import { ListComponent } from './views/articles/list/list.component';
+import { AddArchiveComponent } from './views/documentsarchive/add/add.component';
+import { ListArchiveComponent } from './views/documentsarchive/list/list.component';
+import { AuthGuardService } from './services/auth-guard.service';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
   },
   {
     path: '404',
@@ -61,7 +69,8 @@ export const routes: Routes = [
   {
     path: '',
     component: DefaultLayoutComponent,
-    data: {
+        canActivate:[AuthGuardService], 
+        data: {
       title: 'Home'
     },
     children: [
@@ -81,11 +90,87 @@ export const routes: Routes = [
        {
         path: 'event',
         component: EventComponent,
+        canActivate:[AuthGuardService], 
+        data: {
+          title: 'Events Page'
+        },
+       
+       children: [
+       {
+        path: 'create',
+        component: CreateComponent,
+        data: {
+          title: 'Creat Events Page'
+        }
+       },
+       {
+        path: 'all',
+        component: ArchiveComponent,
+        data: {
+          title: 'Archive Events Page'
+        }
+       },
+       {
+        path: 'calendrier',
+        component: CalendrierComponent,
         data: {
           title: 'Events Page'
         }
        },
-       
+      ]
+     },
+
+     {
+      path: 'article',
+      component: EventComponent,
+      canActivate:[AuthGuardService], 
+      data: {
+        title: 'Archives Page'
+      },
+     
+     children: [
+     {
+      path: 'create',
+      component: AddComponent,
+      data: {
+        title: 'Creat Archives Page'
+      }
+     },
+     {
+      path: 'all',
+      component: ListComponent,
+      data: {
+        title: 'Archive list Page'
+      }
+     },
+    ]
+   },
+    
+   {
+    path: 'archive',
+    component: EventComponent,
+    canActivate:[AuthGuardService], 
+    data: {
+      title: 'Archives Page'
+    },
+   
+   children: [
+   {
+    path: 'create',
+    component: AddArchiveComponent,
+    data: {
+      title: 'Creat Archives Page'
+    }
+   },
+   {
+    path: 'all',
+    component: ListArchiveComponent,
+    data: {
+      title: 'Archive list Page'
+    }
+   },
+  ]
+ },
      
       {
         path: 'buttons',
@@ -109,6 +194,7 @@ export const routes: Routes = [
       },
       {
         path: 'user',
+        canActivate:[AuthGuardService], 
         loadChildren: () => import('./views/user/theme.module').then(m => m.ThemeModule)
       },
       {
@@ -118,6 +204,7 @@ export const routes: Routes = [
       {
         path: 'tasks',
         component: TasksComponent,
+        canActivate:[AuthGuardService], 
         data: {
           title: 'Tasks'
         },
@@ -125,6 +212,7 @@ export const routes: Routes = [
       {
         path: 'tasks/:id',
         component: TaskComponent,
+        canActivate:[AuthGuardService], 
         data: {
           title: 'Tasks'
         }
@@ -132,12 +220,14 @@ export const routes: Routes = [
       {
         path: 'projet',
         component: ProjetComponent,
+        canActivate:[AuthGuardService], 
         data:{
           title: 'Projet'
         }
       },{
         path:'projet/:name',
         component: ProqComponent,
+          canActivate:[AuthGuardService], 
         data:{
           title: 'Proqs'
         }

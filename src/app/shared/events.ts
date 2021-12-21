@@ -6,14 +6,21 @@ import { files} from './files';
 export class Events {
   id : number;
   title: string;
-  Description : string ;
-  user : Array<user>;
-  users: Array<users>;
-  comments:Array <any>;
-  files:Array<files>;
-  start_date : string ;
-  end_date: string ;
-  event_type: string ;
+  description : string ;
+  date : string;
+  type: string;
+  place:string;
+  document:any;
   created_at: string ;
-  
+}
+
+export class Archive{
+
+  id!: string;
+  nom!: string;
+  image!: string;
+  nature!: string;
+  date!: string;
+  lieu!: string ;
+  description! : string;
 }
