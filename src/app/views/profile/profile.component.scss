@@ -1,4 +1,5 @@
 :host {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,6 +33,53 @@ input {
   width: 100%;
   
 }
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  mat-label {
+    color: whitesmoke;
+  }
+  input {
+    color: white;
+  }
+
+  .container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+    
+    
+  }
+  
+  
+  .example-form {
+    
+    width: 95%;
+    margin: 0 1%;
+    font-size: 1.2em;
+    color: whitesmoke;
+    
+  }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
+  
+  td {
+    padding-right: 8px;
+    
+  }
+
+  .example-card {
+    max-width: 400px;
+    border-radius: 10px;
+    background-color:#0d2240;
+    margin:4% 0;
+  }
+>>>>>>> cfe3fbc4b11699f8c21bb9a765249586709dde12
 
 td {
   padding-right: 8px;
@@ -59,16 +107,26 @@ td {
   outline: none;
 }
 .btn {
+<<<<<<< HEAD
   font-size: 1.2em;
   width: 80%;
   font-family:Arial, Helvetica, sans-serif;
   transition-duration: 0.4s;
   
   
+=======
+    font-size: 1.2em;
+    width: 80%;
+    font-family:Arial, Helvetica, sans-serif;
+    transition-duration: 0.4s;
+    
+    
+>>>>>>> cfe3fbc4b11699f8c21bb9a765249586709dde12
 }
 
 
 .button1{
+<<<<<<< HEAD
 background-color: #f9c910;
 color:#2f6a7f;
 }
@@ -122,3 +180,58 @@ border-radius: 5px;
 font-size: 1.2em;
 margin-left: 20%;
 }
+=======
+  background-color: #f9c910;
+  color:#2f6a7f;
+  }
+.button1:hover {
+  color:whitesmoke;
+}
+.button2{
+  background-color: #0a3dab;
+  color:whitesmoke;
+}
+.button2:hover {
+  color: #0a3dab;
+  background-color:whitesmoke;
+}
+.button3{
+  background-color:white;
+  color: #2f6a7f;
+  position: left;
+  
+}
+.button3:hover {
+  background-color: #0a3dab;
+  color:whitesmoke;
+}
+.card{
+  padding: 4%;
+  border: none;
+  border-radius: 10px;
+  //margin:2% 0;
+  background-color:#0d2240;
+  
+}
+::ng-deep .mat-datepicker-toggle-default-icon {
+  color:white;
+}
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #f9c910 !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: white !important;;
+}
+.inputclass{
+  color:white;
+}
+#singleFile{
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-left: 20%;
+}
+>>>>>>> cfe3fbc4b11699f8c21bb9a765249586709dde12
