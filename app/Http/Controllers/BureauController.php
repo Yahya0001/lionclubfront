@@ -21,4 +21,24 @@ class BureauController extends Controller
 
         return $bureau;
     }
+
+    public function create(Request $request) {
+
+        $validatedData = $request->validate([
+            'user_id'=>'required|',
+            'year' => 'required|',
+            'post'=>'required|',
+        ]);
+
+        $validatedData["quote"] = "";
+
+        if($user = User::find($validatedData["user_id"])){
+            $user->type = "2";
+            $user->save();
+            $bureau = Bureau::create($validatedData); 
+            return response()->json(["message" => "success"]);
+        }else 
+            return response()->json(null,204);
+            
+    }
 }
